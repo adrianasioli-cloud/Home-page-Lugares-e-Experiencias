@@ -5,7 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
     <script
       src="https://kit.fontawesome.com/ae10df17fd.js"
       crossorigin="anonymous"
@@ -14,7 +24,8 @@
   <body>
     <header>
       <i class="fa-solid fa-location-dot"></i>
-      <h3>Lugares e Experiencias</h3>
+      <h3>Lugares e Experiências</h3>
+
       <nav>
         <ul>
           <li>Cidades</li>
@@ -26,63 +37,85 @@
     </header>
 
     <main>
-        <!-- Cabeçalho -->
-      <section>
-        <h1>Descubra Lugares Incríveis e Experiências Únicas</h1>
+      <!-- Cabeçalho -->
+      <section class="cabecalho">
+        <h1>
+          Descubra Lugares Incríveis <br />
+          e Experiências Únicas
+        </h1>
         <p>Explore praias, atrações urbanas, trilhas e eventos culturais</p>
-        <div>
-            <button>Buscar</button>
+        <div class="botoes">
+          <form class="busca">
+            <div class="box-busca">
+              <span class="icone">
+                <i class="fa-brands fa-sistrix"></i>
+              </span>
+              <input
+                type="text"
+                placeholder="Buscar lugares, atividades, eventos..."
+              />
+              <button type="submit">Buscar</button>
+            </div>
+          </form>
         </div>
       </section>
-        <!-- Cards -->
+      <!-- Cards -->
       <section>
-        <h2>Explore por Categoria</h2>
-        <p>Encontre as melhores experiências organizadas por tipo de atividade</p>
+        <h2 class="titulo1">Explore por Categoria</h2>
+        <p class="p1">
+          Encontre as melhores experiências organizadas por tipo de atividade
+        </p>
         <div class="divCards">
-            <div class="card">
-                <i class="fa-solid fa-umbrella-beach"></i>
-                <h3>Praias</h3>
-                <p>Aproveite águas cristalinas e vistas incríveis. Praias perfeitas para relaxar e curtir a natureza</p>
-            </div>
-             <div class="card">
-                <i class="fa-solid fa-archway"></i>
-                <h3>Cidades e Atrações</h3>
-                <p>Pontos turísticos, monumentos e lugares icônicos</p>
-            </div>
-             <div class="card">
-                <i class="fa-solid fa-person-hiking"></i>
-                <h3>Parques e Trilhas</h3>
-                <p>Natureza, caminhadas e atividades ao ar livre</p>
-            </div>
-             <div class="card">
-                <i class="fa-solid fa-calendar-check"></i>
-                <h3>Eventos e Shows</h3>
-                <p>Festivais, apresentações e eventos culturais</p>
-            </div>
+          <div class="card">
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <h3>Praias</h3>
+            <p>
+              Aproveite águas cristalinas e vistas incríveis. Praias perfeitas
+              para relaxar e curtir a natureza
+            </p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-archway"></i>
+            <h3>Cidades e Atrações Turísticas</h3>
+            <p>Pontos turísticos, monumentos e lugares icônicos</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-person-hiking"></i>
+            <h3>Parques e Trilhas</h3>
+            <p>Natureza, caminhadas e atividades ao ar livre</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Eventos e Shows</h3>
+            <p>Festivais, apresentações e eventos culturais</p>
+          </div>
         </div>
       </section>
       <!-- Imagens -->
       <section>
         <h2>Praias</h2>
-        <p>Procurando o destino de praia perfeito? Confira algumas praias imperdíveis</p>
+        <p>
+          Procurando o destino de praia perfeito? Confira algumas praias
+          imperdíveis
+        </p>
         <button>Ver Todos</button>
         <div class="divImagens">
-            <div class="imagem">
-                <img src="https://picsum.photos/id/13/200" alt="">
-                <h3>Baía do Sancho</h3> 
-            </div>
-            <div class="imagem">
-                <img src="https://picsum.photos/id/16/200" alt="">
-                <h3>Barra de São Miguel</h3> 
-            </div>
-            <div class="imagem">
-                <img src="https://picsum.photos/id/154/200" alt="">
-                <h3>Tibau do Sul</h3> 
-            </div>
-            <div class="imagem">
-                <img src="https://picsum.photos/id/199/200" alt="">
-                <h3>Ilha do Campeche</h3> 
-            </div>
+          <div class="imagem">
+            <img src="https://picsum.photos/id/13/200" alt="" />
+            <h3>Baía do Sancho</h3>
+          </div>
+          <div class="imagem">
+            <img src="https://picsum.photos/id/16/200" alt="" />
+            <h3>Barra de São Miguel</h3>
+          </div>
+          <div class="imagem">
+            <img src="https://picsum.photos/id/154/200" alt="" />
+            <h3>Tibau do Sul</h3>
+          </div>
+          <div class="imagem">
+            <img src="https://picsum.photos/id/199/200" alt="" />
+            <h3>Ilha do Campeche</h3>
+          </div>
         </div>
       </section>
       <section>
@@ -90,22 +123,22 @@
         <p>Explore os pontos mais icônicos</p>
         <button>Ver Todos</button>
         <div class="divImagens">
-            <div class="imagem">
-                <img src="https://picsum.photos/id/212/200" alt="">
-                <h3>Fontana di Trevi</h3> 
-            </div>
-            <div class="imagem">
-                <img src="https://picsum.photos/id/234/200" alt="">
-                <h3>Torre Eiffel</h3> 
-            </div>
-            <div class="imagem">
-                <img src="https://picsum.photos/id/299/200" alt="">
-                <h3>HMY Britannia</h3> 
-            </div>
-            <div class="imagem">
-                <img src="https://picsum.photos/id/328/200" alt="">
-                <h3>Chamonix-Mont-Blanc</h3> 
-            </div>
+          <div class="imagem">
+            <img src="https://picsum.photos/id/212/200" alt="" />
+            <h3>Fontana di Trevi</h3>
+          </div>
+          <div class="imagem">
+            <img src="https://picsum.photos/id/234/200" alt="" />
+            <h3>Torre Eiffel</h3>
+          </div>
+          <div class="imagem">
+            <img src="https://picsum.photos/id/299/200" alt="" />
+            <h3>HMY Britannia</h3>
+          </div>
+          <div class="imagem">
+            <img src="https://picsum.photos/id/328/200" alt="" />
+            <h3>Chamonix-Mont-Blanc</h3>
+          </div>
         </div>
       </section>
     </main>

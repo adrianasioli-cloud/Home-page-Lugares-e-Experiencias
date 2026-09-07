@@ -159,10 +159,15 @@ main {
   background-color: rgba(243, 240, 240, 0.671);
   border-radius: 20px;
   width: 35%;
-  height: 300px;
+  min-height: 300px;
   padding: 2rem;
   margin: 15px;
-  align-content: space-between;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 
   h3 {
     margin-bottom: 10px;
@@ -180,9 +185,13 @@ main {
     margin-bottom: 20px;
   }
 }
-.card i:hover {
-    background-color: rgb(206, 201, 201);
-    color: blue;
+.card:hover i {
+  transform: scale(1.1);
+  color: #3d24c7;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 .divImagens {
   display: flex;

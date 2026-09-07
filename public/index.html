@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- icei-pbr-diw -->
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,17 +46,34 @@
         <p>Explore praias, atrações urbanas, trilhas e eventos culturais</p>
         <div class="botoes">
           <form class="busca">
-            <div class="box-busca">
-              <span class="icone">
-                <i class="fa-brands fa-sistrix"></i>
-              </span>
-              <input
-                type="text"
-                placeholder="Buscar lugares, atividades, eventos..."
-              />
-              <button type="submit">Buscar</button>
-            </div>
-          </form>
+
+  <div class="box-busca">
+
+    <span class="icone">
+      <i class="fa-brands fa-sistrix"></i>
+    </span>
+
+    <input
+      type="text"
+      placeholder="Buscar lugares..."
+    >
+
+    <select>
+      <option value="">Categoria</option>
+      <option value="praias">Praias</option>
+      <option value="cidades">Cidades</option>
+      <option value="parques">Parques</option>
+      <option value="eventos">Eventos</option>
+    </select>
+
+    <button type="submit">
+      Buscar
+    </button>
+
+  </div>
+
+</form>
+          
         </div>
       </section>
       <!-- Cards -->
@@ -66,62 +83,72 @@
           Encontre as melhores experiências organizadas por tipo de atividade
         </p>
         <div class="divCards">
-          <div class="card">
+          <article class="card">
             <i class="fa-solid fa-umbrella-beach"></i>
             <h3>Praias</h3>
             <p>
               Aproveite águas cristalinas e vistas incríveis. Praias perfeitas
               para relaxar e curtir a natureza
             </p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <i class="fa-solid fa-archway"></i>
             <h3>Cidades e Atrações Turísticas</h3>
             <p>Pontos turísticos, monumentos e lugares icônicos</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <i class="fa-solid fa-person-hiking"></i>
             <h3>Parques e Trilhas</h3>
             <p>Natureza, caminhadas e atividades ao ar livre</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <i class="fa-solid fa-calendar-check"></i>
             <h3>Eventos e Shows</h3>
             <p>Festivais, apresentações e eventos culturais</p>
-          </div>
+          </article>
         </div>
       </section>
       <!-- Imagens -->
-      <section>
-        <h2>Praias</h2>
-        <p>
-          Procurando o destino de praia perfeito? Confira algumas praias
-          imperdíveis
-        </p>
-        <button>Ver Todos</button>
+      <section class="secao-lugares">
+  <div class="titulo-secao">
+    <div>
+      <h2>Praias</h2>
+      <p>
+        Procurando o destino de praia perfeito? Confira algumas praias
+        imperdíveis.
+      </p>
+    </div>
+
+    <button>Ver Todos</button>
+  </div>
         <div class="divImagens">
-          <div class="imagem">
+          <article class="imagem">
             <img src="https://picsum.photos/id/13/200" alt="" />
             <h3>Baía do Sancho</h3>
-          </div>
-          <div class="imagem">
+          </article>
+          <article class="imagem">
             <img src="https://picsum.photos/id/16/200" alt="" />
             <h3>Barra de São Miguel</h3>
-          </div>
-          <div class="imagem">
+          </article>
+          <article class="imagem">
             <img src="https://picsum.photos/id/154/200" alt="" />
             <h3>Tibau do Sul</h3>
-          </div>
-          <div class="imagem">
+          </article>
+          <article class="imagem">
             <img src="https://picsum.photos/id/199/200" alt="" />
             <h3>Ilha do Campeche</h3>
-          </div>
+          </article>
         </div>
       </section>
-      <section>
-        <h2>Cidades e Atrações Turísticas</h2>
-        <p>Explore os pontos mais icônicos</p>
-        <button>Ver Todos</button>
+      <section class="secao-lugares">
+  <div class="titulo-secao">
+    <div>
+      <h2>Cidades e Atrações Turísticas</h2>
+      <p>Explore os pontos mais icônicos</p>
+    </div>
+
+    <button>Ver Todos</button>
+  </div>
         <div class="divImagens">
           <div class="imagem">
             <img src="https://picsum.photos/id/212/200" alt="" />
@@ -143,12 +170,29 @@
       </section>
     </main>
 
-    <footer>
-      <h2>Receba as Melhores Dicas</h2>
-      <p>
-        Inscreva-se para receber recomendações personalizadas e novidades sobre
-        evento
-      </p>
-    </footer>
+    <footer class="rodape">
+  <h2>Receba as Melhores Dicas</h2>
+
+  <p>
+    Inscreva-se para receber recomendações personalizadas e novidades sobre
+    eventos.
+  </p>
+
+  <form class="newsletter">
+    <input
+      type="text"
+      placeholder="Seu nome"
+    />
+
+    <input
+      type="email"
+      placeholder="Seu e-mail"
+    />
+
+    <button type="submit">
+      Inscrever-se
+    </button>
+  </form>
+</footer>
   </body>
 </html>

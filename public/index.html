@@ -26,12 +26,12 @@
       <i class="fa-solid fa-location-dot"></i>
       <h3>Lugares e Experiências</h3>
 
-      <nav>
+      <nav class="menu">
         <ul>
-          <li>Cidades</li>
-          <li>Praias</li>
-          <li>Parques</li>
-          <li>Eventos</li>
+          <li><a href="#cidades">Cidades</a></li>
+          <li><a href="#praias">Praias</a></li>
+          <li><a href="#parques">Parques</a></li>
+          <li><a href="#eventos">Eventos</a></li>
         </ul>
       </nav>
     </header>
@@ -46,34 +46,24 @@
         <p>Explore praias, atrações urbanas, trilhas e eventos culturais</p>
         <div class="botoes">
           <form class="busca">
+            <div class="box-busca">
+              <span class="icone">
+                <i class="fa-brands fa-sistrix"></i>
+              </span>
 
-  <div class="box-busca">
+              <input type="text" placeholder="Buscar lugares..." />
 
-    <span class="icone">
-      <i class="fa-brands fa-sistrix"></i>
-    </span>
+              <select>
+                <option value="">Categoria</option>
+                <option value="praias">Praias</option>
+                <option value="cidades">Cidades</option>
+                <option value="parques">Parques</option>
+                <option value="eventos">Eventos</option>
+              </select>
 
-    <input
-      type="text"
-      placeholder="Buscar lugares..."
-    >
-
-    <select>
-      <option value="">Categoria</option>
-      <option value="praias">Praias</option>
-      <option value="cidades">Cidades</option>
-      <option value="parques">Parques</option>
-      <option value="eventos">Eventos</option>
-    </select>
-
-    <button type="submit">
-      Buscar
-    </button>
-
-  </div>
-
-</form>
-          
+              <button type="submit">Buscar</button>
+            </div>
+          </form>
         </div>
       </section>
       <!-- Cards -->
@@ -109,18 +99,18 @@
         </div>
       </section>
       <!-- Imagens -->
-      <section class="secao-lugares">
-  <div class="titulo-secao">
-    <div>
-      <h2>Praias</h2>
-      <p>
-        Procurando o destino de praia perfeito? Confira algumas praias
-        imperdíveis.
-      </p>
-    </div>
+      <section id="praias" class="secao-lugares">
+        <div class="titulo-secao">
+          <div>
+            <h2>Praias</h2>
+            <p>
+              Procurando o destino de praia perfeito? Confira algumas praias
+              imperdíveis.
+            </p>
+          </div>
 
-    <button>Ver Todos</button>
-  </div>
+          <button>Ver Todos</button>
+        </div>
         <div class="divImagens">
           <article class="imagem">
             <img src="https://picsum.photos/id/13/200" alt="" />
@@ -140,15 +130,15 @@
           </article>
         </div>
       </section>
-      <section class="secao-lugares">
-  <div class="titulo-secao">
-    <div>
-      <h2>Cidades e Atrações Turísticas</h2>
-      <p>Explore os pontos mais icônicos</p>
-    </div>
+      <section id="cidades" class="secao-lugares">
+        <div class="titulo-secao">
+          <div>
+            <h2>Cidades e Atrações Turísticas</h2>
+            <p>Explore os pontos mais icônicos</p>
+          </div>
 
-    <button>Ver Todos</button>
-  </div>
+          <button>Ver Todos</button>
+        </div>
         <div class="divImagens">
           <div class="imagem">
             <img src="https://picsum.photos/id/212/200" alt="" />
@@ -171,28 +161,20 @@
     </main>
 
     <footer class="rodape">
-  <h2>Receba as Melhores Dicas</h2>
+      <h2>Receba as Melhores Dicas</h2>
 
-  <p>
-    Inscreva-se para receber recomendações personalizadas e novidades sobre
-    eventos.
-  </p>
+      <p>
+        Inscreva-se para receber recomendações personalizadas e novidades sobre
+        eventos.
+      </p>
 
-  <form class="newsletter">
-    <input
-      type="text"
-      placeholder="Seu nome"
-    />
+      <form class="newsletter">
+        <input type="text" placeholder="Seu nome" />
 
-    <input
-      type="email"
-      placeholder="Seu e-mail"
-    />
+        <input type="email" placeholder="Seu e-mail" />
 
-    <button type="submit">
-      Inscrever-se
-    </button>
-  </form>
-</footer>
+        <button type="submit">Inscrever-se</button>
+      </form>
+    </footer>
   </body>
 </html>

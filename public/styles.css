@@ -33,6 +33,15 @@ header {
     list-style-type: none;
   }
 }
+.menu a {
+  color: #1e1e2f;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #3d24c7;
+}
 
 h3 {
   font-size: 20px;

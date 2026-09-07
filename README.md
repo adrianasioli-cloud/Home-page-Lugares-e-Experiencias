@@ -1,22 +1,25 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=23252821)
+
 # Trabalho Prático - Semana 04 e 05
-
-Dessa vez, vamos dar sequência ao projeto iniciado na semana passada. Se você ainda não fez o projeto da semana anterior, fique atento, se programe e procure colocar as atividades em dia. Volte lá, leia tudo e faça sua parte pois essa atividade depende da atividade anterior..
-
-Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto no celular quanto no desktop, entendendo também como é o processo gradativo e colaborativo de desenvolvimento de um software, registrando cada etapa no histórico de commits do repositório do git/GitHub.
-
-**IMPORTANTE:** Você deve trabalhar e alterar apenas arquivos dentro da pasta **`public`,** mantendo os arquivos **`index.html`** e **`styles.css`** com estes nomes. Deixe todos os demais arquivos e pastas desse repositório inalterados. **PRESTE MUITA ATENÇÃO NISSO.**
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Adriana Oliveira da Silva 
+- Matricula: 927120
 
-## Print da versão responsiva com CSS puro
+## Proposta de projeto escolhida: 
 
-<<  COLOQUE A IMAGEM AQUI >>
+Proposta 2 — Lugares e Experiências
+
+## Breve descrição sobre o projeto:
+
+O projeto Lugares e Experiências é uma aplicação web para apresentar diferentes destinos e atividades, como praias, cidades, parques, trilhas e eventos. A página permitirá que os usuários explorem lugares e descubram novas experiências por meio de categorias, imagens e informações.
+
+
+## Wireframe
+
+![Wireframe do projeto](https://github.com/adrianasioli-cloud/Home-page-Lugares-e-Experiencias/blob/develop/public/img/Wireframe1.jpg)
+![Wireframe do projeto](https://github.com/adrianasioli-cloud/Home-page-Lugares-e-Experiencias/blob/develop/public/img/Wireframe2.jpg)
+![Wireframe do projeto](https://github.com/adrianasioli-cloud/Home-page-Lugares-e-Experiencias/blob/develop/public/img/Wireframe3.jpg)
 
 ## Print da versão responsiva com Bootstrap
 

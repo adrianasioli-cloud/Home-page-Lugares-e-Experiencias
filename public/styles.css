@@ -6,32 +6,15 @@
 body {
   /* background-color: #ebe5e5; */
   font-family: "poppins", sans-serif;
-  font-size: var(--font-size);
 }
 
 header {
   width: 100%;
   background-color: rgba(240, 234, 234, 0.534);
-  display: flex;
-  padding: 1rem;
-  justify-items: center;
-  align-items: center;
-  justify-content: space-around;
+}
 
-  i {
-    font-size: 30px;
-   
-  }
-
-  h3 {
-    font-size: 2vw;
-  }
-
-  ul {
-    display: flex;
-    gap: 40px;
-    list-style-type: none;
-  }
+header h3 {
+  font-size: 20px;
 }
 .menu a {
   color: #1e1e2f;
@@ -49,17 +32,10 @@ h3 {
   line-height: 1.5;
 }
 
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
 
 .cabecalho {
   background-color: #3d24c7;
   padding: 5rem;
-  justify-items: center;
-  align-items: center;
   font-size: 25px;
   height: 100vh;
 
@@ -79,60 +55,24 @@ main {
     text-align: center;
   }
 }
-
 .busca {
-  display: flex;
-  justify-content: center;
   margin-top: 1px;
 }
-.box-busca {
-  display: flex;
-  align-items: center;
-  background: #eee;
-  border-radius: 30px;
-  margin-top: 4rem;
-  padding: 0.5rem;
-  width: 40rem;
-  height: 3rem;
-}
-
-.box-busca .icone {
-  margin-left: 15px;
-  font-size: 16px;
-  color: #888;
-}
-
-.box-busca input {
-  flex: 1;
-  border: none;
-  outline: none;
-  padding: 12px;
-  background: transparent;
-  font-size: 14px;
-}
-
-.box-busca button {
-  background: #1e1e2f;
+/* BOTÃO DE BUSCA */
+.busca button {
+  background-color: #1e1e2f;
   color: white;
   border: none;
-  padding: 10px 25px;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.box-busca button:hover {
-  background-color: rgb(206, 201, 201);
-    color: blue;
-}
-.box-busca select {
-  border: none;
-  outline: none;
-  background: transparent;
-
-  padding: 10px;
-
+  border-radius: 8px;
   font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.busca button:hover {
+  background-color: white;
+  color: #3d24c7;
 }
 
 .titulo1 {
@@ -149,21 +89,12 @@ main {
   margin-bottom: 40px;
 
 }
-.divCards {
-  /* background-color: #3d24c7; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+
 .card {
   background-color: rgba(243, 240, 240, 0.671);
   border-radius: 20px;
-  width: 35%;
   min-height: 300px;
   padding: 2rem;
-  margin: 15px;
-
   display: flex;
   flex-direction: column;
 
@@ -195,24 +126,17 @@ main {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 .divImagens {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  gap: 20px;
-
   margin: 30px 0;
 }
 
 
 .imagem {
   position: relative;
-
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   height: 250px;
-
+  margin: 0 auto;
   border-radius: 15px;
-
   overflow: hidden;
 }
 
@@ -259,132 +183,35 @@ main {
   padding: 4rem 8%;
 }
 
-
-/* TÍTULO DA SEÇÃO */
-
-.titulo-secao {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin-bottom: 2rem;
-}
-
-
-.titulo-secao h2 {
+.secao-lugares h2 {
   font-size: 32px;
   font-weight: 500;
-
   margin-bottom: 0.5rem;
 }
 
-
-.titulo-secao p {
+.secao-lugares h2 + p {
   font-size: 16px;
   color: #666;
 }
 
-
-/* BOTÃO */
-
-.titulo-secao button {
+.secao-lugares button {
   background-color: #3d24c7;
   color: white;
-
   border: none;
   border-radius: 8px;
-
   padding: 12px 20px;
-
   font-size: 15px;
   font-weight: 500;
-
   cursor: pointer;
 }
 
-
-.titulo-secao button:hover {
+.secao-lugares button:hover {
   background-color: #281891;
 }
+
+
 /* =========================
    RODAPÉ
-========================= */
-
-.rodape {
-  background-color: #3d24c7;
-  color: white;
-
-  text-align: center;
-
-  padding: 4rem 2rem;
-  margin-top: 2rem;
-}
-
-
-.rodape h2 {
-  font-size: 32px;
-  font-weight: 500;
-
-  margin-bottom: 1rem;
-}
-
-
-.rodape p {
-  max-width: 600px;
-
-  margin: 0 auto 2rem;
-
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-
-/* NEWSLETTER */
-
-.newsletter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-
-.newsletter input {
-  width: 220px;
-
-  padding: 12px 15px;
-
-  border: none;
-  border-radius: 8px;
-
-  font-size: 14px;
-}
-
-
-.newsletter button {
-  background-color: #1e1e2f;
-  color: white;
-
-  border: none;
-  border-radius: 8px;
-
-  padding: 12px 20px;
-
-  font-size: 14px;
-  font-weight: 500;
-
-  cursor: pointer;
-}
-
-
-.newsletter button:hover {
-  background-color: white;
-  color: #3d24c7;
-}
-/* =========================
-   RODAPÉ - NOVO LAYOUT
 ========================= */
 
 .rodape {
@@ -394,40 +221,42 @@ main {
   margin-top: 2rem;
 }
 
-.rodape-conteudo {
-  display: flex;
-  justify-content: space-between;
-  gap: 4rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* COLUNA DA NEWSLETTER */
-
-.rodape-newsletter {
-  flex: 2;
-}
-
-.rodape-newsletter h2 {
+.rodape h2 {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
-.rodape-newsletter p {
-  max-width: 600px;
-  margin-bottom: 2rem;
+.rodape p {
+  font-size: 16px;
   line-height: 1.6;
 }
 
-/* COLUNA DAS REDES */
-
-.redes-sociais {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+.rodape-newsletter p {
+  max-width: 600px;
+  margin-bottom: 2rem;
 }
+
+/* NEWSLETTER */
+
+
+.newsletter button {
+  background-color: #1e1e2f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: white;
+  color: #3d24c7;
+}
+
+/* REDES SOCIAIS */
+
 
 .redes-sociais h3 {
   font-size: 22px;
@@ -459,98 +288,4 @@ main {
   text-align: center;
   font-size: 13px;
   opacity: 0.8;
-}
-
-/* =========================
-   RESPONSIVIDADE
-========================= */
-
-@media (max-width: 768px) {
-
-  /* Conteúdo geral */
-  body {
-    width: 100%;
-  }
-  .divCards {
-  flex-direction: column;
-}
-
-.card {
-  width: 90%;
-}
-header {
-  flex-direction: column;
-  gap: 15px;
-}
-
-header h3 {
-  font-size: 24px;
-}
-
-header ul {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-/* BANNER */
-.cabecalho {
-  height: auto;
-  min-height: 70vh;
-  padding: 3rem 1.5rem;
-}
-
-.cabecalho h1 {
-  font-size: 40px;
-}
-
-.cabecalho p {
-  text-align: center;
-  font-size: 18px;
-}
-/* BARRA DE BUSCA */
-.box-busca {
-  width: 90%;
-  height: auto;
-  flex-direction: column;
-  border-radius: 15px;
-  padding: 1rem;
-  gap: 10px;
-}
-
-.box-busca input,
-.box-busca select,
-.box-busca button {
-  width: 100%;
-}
-.box-busca .icone {
-  display: none;
-}
-/* RODAPÉ RESPONSIVO */
-
-.rodape {
-  padding: 3rem 1.5rem 2rem;
-}
-
-.rodape-conteudo {
-  flex-direction: column;
-  gap: 3rem;
-}
-
-.rodape-newsletter {
-  width: 100%;
-}
-
-.rodape-newsletter h2 {
-  font-size: 28px;
-}
-
-.redes-sociais {
-  width: 100%;
-  align-items: center;
-  text-align: center;
-}
-
-.direitos {
-  margin-top: 2rem;
-}
 }

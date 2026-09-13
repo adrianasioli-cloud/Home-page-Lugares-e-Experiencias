@@ -7,12 +7,13 @@
     <title>Home page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -22,18 +23,28 @@
     ></script>
   </head>
   <body>
-    <header>
-      <i class="fa-solid fa-location-dot"></i>
-      <h3>Lugares e Experiências</h3>
+    <header class="py-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Logo e nome -->
+          <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <i class="fa-solid fa-location-dot fs-3"></i>
+            <h3 class="d-inline ms-2">Lugares e Experiências</h3>
+          </div>
 
-      <nav class="menu">
-        <ul>
-          <li><a href="#cidades">Cidades</a></li>
-          <li><a href="#praias">Praias</a></li>
-          <li><a href="#parques">Parques</a></li>
-          <li><a href="#eventos">Eventos</a></li>
-        </ul>
-      </nav>
+          <!-- Menu -->
+          <nav class="menu col-12 col-md-8">
+            <ul
+              class="list-unstyled d-flex flex-wrap justify-content-center justify-content-md-end gap-3 gap-md-4 mb-0"
+            >
+              <li><a href="#cidades">Cidades</a></li>
+              <li><a href="#praias">Praias</a></li>
+              <li><a href="#parques">Parques</a></li>
+              <li><a href="#eventos">Eventos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -44,65 +55,88 @@
           e Experiências Únicas
         </h1>
         <p>Explore praias, atrações urbanas, trilhas e eventos culturais</p>
-        <div class="botoes">
-          <form class="busca">
-            <div class="box-busca">
-              <span class="icone">
-                <i class="fa-brands fa-sistrix"></i>
-              </span>
+        <form class="container busca">
+          <div class="row justify-content-center g-2">
+            <div class="col-12 col-md-6">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Buscar lugares..."
+                />
+              </div>
+            </div>
 
-              <input type="text" placeholder="Buscar lugares..." />
-
-              <select>
+            <div class="col-12 col-md-3">
+              <select class="form-select">
                 <option value="">Categoria</option>
                 <option value="praias">Praias</option>
                 <option value="cidades">Cidades</option>
                 <option value="parques">Parques</option>
                 <option value="eventos">Eventos</option>
               </select>
-
-              <button type="submit">Buscar</button>
             </div>
-          </form>
-        </div>
+
+            <div class="col-12 col-md-2">
+              <button type="submit" class="btn btn-dark w-100">Buscar</button>
+            </div>
+          </div>
+        </form>
       </section>
+
       <!-- Cards -->
       <section>
         <h2 class="titulo1">Explore por Categoria</h2>
         <p class="p1">
           Encontre as melhores experiências organizadas por tipo de atividade
         </p>
-        <div class="divCards">
-          <article class="card">
-            <i class="fa-solid fa-umbrella-beach"></i>
-            <h3>Praias</h3>
-            <p>
-              Aproveite águas cristalinas e vistas incríveis. Praias perfeitas
-              para relaxar e curtir a natureza
-            </p>
-          </article>
-          <article class="card">
-            <i class="fa-solid fa-archway"></i>
-            <h3>Cidades e Atrações Turísticas</h3>
-            <p>Pontos turísticos, monumentos e lugares icônicos</p>
-          </article>
-          <article class="card">
-            <i class="fa-solid fa-person-hiking"></i>
-            <h3>Parques e Trilhas</h3>
-            <p>Natureza, caminhadas e atividades ao ar livre</p>
-          </article>
-          <article class="card">
-            <i class="fa-solid fa-calendar-check"></i>
-            <h3>Eventos e Shows</h3>
-            <p>Festivais, apresentações e eventos culturais</p>
-          </article>
+        <div class="container">
+          <div class="row g-4 justify-content-center">
+            <article class="col-12 col-md-6">
+              <div class="card h-100">
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <h3>Praias</h3>
+                <p>
+                  Aproveite águas cristalinas e vistas incríveis. Praias
+                  perfeitas para relaxar e curtir a natureza
+                </p>
+              </div>
+            </article>
+
+            <article class="col-12 col-md-6">
+              <div class="card h-100">
+                <i class="fa-solid fa-archway"></i>
+                <h3>Cidades e Atrações Turísticas</h3>
+                <p>Pontos turísticos, monumentos e lugares icônicos</p>
+              </div>
+            </article>
+
+            <article class="col-12 col-md-6">
+              <div class="card h-100">
+                <i class="fa-solid fa-person-hiking"></i>
+                <h3>Parques e Trilhas</h3>
+                <p>Natureza, caminhadas e atividades ao ar livre</p>
+              </div>
+            </article>
+
+            <article class="col-12 col-md-6">
+              <div class="card h-100">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h3>Eventos e Shows</h3>
+                <p>Festivais, apresentações e eventos culturais</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
       <!-- Imagens -->
       <section id="praias" class="secao-lugares">
-        <div class="titulo-secao">
-          <div>
+        <div class="row align-items-center mb-4">
+          <div class="col-12 col-md-9">
             <h2>Praias</h2>
             <p>
               Procurando o destino de praia perfeito? Confira algumas praias
@@ -110,102 +144,169 @@
             </p>
           </div>
 
-          <button>Ver Todos</button>
+          <div class="col-12 col-md-3 text-md-end">
+            <button>Ver Todos</button>
+          </div>
         </div>
+
         <div class="divImagens">
-          <article class="imagem">
-            <img src="https://picsum.photos/id/13/200" alt="" />
-            <h3>Baía do Sancho</h3>
-          </article>
-          <article class="imagem">
-            <img src="https://picsum.photos/id/16/200" alt="" />
-            <h3>Barra de São Miguel</h3>
-          </article>
-          <article class="imagem">
-            <img src="https://picsum.photos/id/154/200" alt="" />
-            <h3>Tibau do Sul</h3>
-          </article>
-          <article class="imagem">
-            <img src="https://picsum.photos/id/199/200" alt="" />
-            <h3>Ilha do Campeche</h3>
-          </article>
+          <div class="row g-4 justify-content-center">
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/13/200"
+                  alt="Baía do Sancho"
+                />
+                <h3>Baía do Sancho</h3>
+              </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/16/200"
+                  alt="Barra de São Miguel"
+                />
+                <h3>Barra de São Miguel</h3>
+              </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/154/200"
+                  alt="Tibau do Sul"
+                />
+                <h3>Tibau do Sul</h3>
+              </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/199/200"
+                  alt="Ilha do Campeche"
+                />
+                <h3>Ilha do Campeche</h3>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
       <section id="cidades" class="secao-lugares">
-        <div class="titulo-secao">
-          <div>
+        <div class="row align-items-center mb-4">
+          <div class="col-12 col-md-9">
             <h2>Cidades e Atrações Turísticas</h2>
             <p>Explore os pontos mais icônicos</p>
           </div>
 
-          <button>Ver Todos</button>
+          <div class="col-12 col-md-3 text-md-end">
+            <button>Ver Todos</button>
+          </div>
         </div>
         <div class="divImagens">
-          <div class="imagem">
-            <img src="https://picsum.photos/id/212/200" alt="" />
-            <h3>Fontana di Trevi</h3>
-          </div>
-          <div class="imagem">
-            <img src="https://picsum.photos/id/234/200" alt="" />
-            <h3>Torre Eiffel</h3>
-          </div>
-          <div class="imagem">
-            <img src="https://picsum.photos/id/299/200" alt="" />
-            <h3>HMY Britannia</h3>
-          </div>
-          <div class="imagem">
-            <img src="https://picsum.photos/id/328/200" alt="" />
-            <h3>Chamonix-Mont-Blanc</h3>
+          <div class="row g-4 justify-content-center">
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/212/200"
+                  alt="Fontana di Trevi"
+                />
+                <h3>Fontana di Trevi</h3>
+              </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/234/200"
+                  alt="Torre Eiffel"
+                />
+                <h3>Torre Eiffel</h3>
+              </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/299/200"
+                  alt="HMY Britannia"
+                />
+                <h3>HMY Britannia</h3>
+              </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/328/200"
+                  alt="Chamonix-Mont-Blanc"
+                />
+                <h3>Chamonix-Mont-Blanc</h3>
+              </div>
+            </article>
           </div>
         </div>
       </section>
       <section id="parques" class="secao-lugares">
-        <div class="titulo-secao">
-          <div>
+        <div class="row align-items-center mb-4">
+          <div class="col-12 col-md-9">
             <h2>Parques e Trilhas</h2>
             <p>Explore a natureza e descubra lugares incríveis ao ar livre.</p>
           </div>
 
-          <button>Ver Todos</button>
+          <div class="col-12 col-md-3 text-md-end">
+            <button>Ver Todos</button>
+          </div>
         </div>
 
         <div class="divImagens">
-          <article class="imagem">
-            <img
-              src="https://picsum.photos/id/15/300/250"
-              alt="Parque natural"
-            />
-            <h3>Parque Natural</h3>
-          </article>
+          <div class="row g-4 justify-content-center">
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/15/300/250"
+                  alt="Parque natural"
+                />
+                <h3>Parque Natural</h3>
+              </div>
+            </article>
 
-          <article class="imagem">
-            <img
-              src="https://picsum.photos/id/28/300/250"
-              alt="Trilha na montanha"
-            />
-            <h3>Trilha na Montanha</h3>
-          </article>
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/28/300/250"
+                  alt="Trilha na montanha"
+                />
+                <h3>Trilha na Montanha</h3>
+              </div>
+            </article>
 
-          <article class="imagem">
-            <img
-              src="https://picsum.photos/id/1036/300/250"
-              alt="Caminhada na natureza"
-            />
-            <h3>Caminhada na Natureza</h3>
-          </article>
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/1036/300/250"
+                  alt="Caminhada na natureza"
+                />
+                <h3>Caminhada na Natureza</h3>
+              </div>
+            </article>
 
-          <article class="imagem">
-            <img
-              src="https://picsum.photos/id/1040/300/250"
-              alt="Aventura ao ar livre"
-            />
-            <h3>Aventura ao Ar Livre</h3>
-          </article>
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/1040/300/250"
+                  alt="Aventura ao ar livre"
+                />
+                <h3>Aventura ao Ar Livre</h3>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
       <section id="eventos" class="secao-lugares">
-        <div class="titulo-secao">
-          <div>
+        <div class="row align-items-center mb-4">
+          <div class="col-12 col-md-9">
             <h2>Eventos e Shows</h2>
             <p>
               Encontre experiências culturais, festivais e apresentações
@@ -213,96 +314,124 @@
             </p>
           </div>
 
-          <button>Ver Todos</button>
+          <div class="col-12 col-md-3 text-md-end">
+            <button>Ver Todos</button>
+          </div>
         </div>
 
         <div class="divImagens">
-          <article class="imagem">
-            <img
-              src="https://picsum.photos/id/20/300/250"
-              alt="Festival de música"
-            />
-            <h3>Festival de Música</h3>
-          </article>
+          <div class="row g-4 justify-content-center">
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/20/300/250"
+                  alt="Festival de música"
+                />
+                <h3>Festival de Música</h3>
+              </div>
+            </article>
 
-          <article class="imagem">
-            <img
-              src="https://picsum.photos/id/103/300/250"
-              alt="Show ao vivo"
-            />
-            <h3>Show ao Vivo</h3>
-          </article>
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/103/300/250"
+                  alt="Show ao vivo"
+                />
+                <h3>Show ao Vivo</h3>
+              </div>
+            </article>
 
-          <article class="imagem">
-            <img
-              src="https://picsum.photos/id/1041/300/250"
-              alt="Evento cultural"
-            />
-            <h3>Evento Cultural</h3>
-          </article>
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/1041/300/250"
+                  alt="Evento cultural"
+                />
+                <h3>Evento Cultural</h3>
+              </div>
+            </article>
 
-          <article class="imagem">
-            <img
-              src="https://picsum.photos/id/1070/300/250"
-              alt="Festival e entretenimento"
-            />
-            <h3>Festival e Entretenimento</h3>
-          </article>
+            <article class="col-12 col-sm-6 col-lg-3">
+              <div class="imagem">
+                <img
+                  src="https://picsum.photos/id/1070/300/250"
+                  alt="Festival e entretenimento"
+                />
+                <h3>Festival e Entretenimento</h3>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="rodape">
+      <div class="container">
+        <div class="row align-items-start g-4">
+          <!-- Newsletter -->
+          <div class="col-12 col-md-8 text-center text-md-start">
+            <div class="rodape-newsletter">
+              <h2>Receba as Melhores Dicas</h2>
 
-  <div class="rodape-conteudo">
+              <p>
+                Inscreva-se para receber recomendações personalizadas e
+                novidades sobre eventos.
+              </p>
 
-    <!-- Newsletter -->
-    <div class="rodape-newsletter">
-      <h2>Receba as Melhores Dicas</h2>
+              <form class="newsletter">
+                <div class="row g-2">
+                  <div class="col-12 col-md-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Seu nome"
+                    />
+                  </div>
 
-      <p>
-        Inscreva-se para receber recomendações personalizadas e novidades sobre
-        eventos.
-      </p>
+                  <div class="col-12 col-md-4">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Seu e-mail"
+                    />
+                  </div>
 
-      <form class="newsletter">
-        <input type="text" placeholder="Seu nome" />
+                  <div class="col-12 col-md-4">
+                    <button type="submit" class="btn w-100">
+                      Inscrever-se
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
 
-        <input type="email" placeholder="Seu e-mail" />
+          <!-- Redes sociais -->
+          <div class="col-12 col-md-4 text-center text-md-start">
+            <div class="redes-sociais d-flex flex-column gap-3">
+              <h3>Siga nossas redes</h3>
 
-        <button type="submit">Inscrever-se</button>
-      </form>
-    </div>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+              </a>
 
-    <!-- Redes sociais -->
-    <div class="redes-sociais">
-      <h3>Siga nossas redes</h3>
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+                Facebook
+              </a>
 
-      <a href="#">
-        <i class="fa-brands fa-instagram"></i>
-        Instagram
-      </a>
-
-      <a href="#">
-        <i class="fa-brands fa-facebook"></i>
-        Facebook
-      </a>
-
-      <a href="#">
-        <i class="fa-brands fa-youtube"></i>
-        YouTube
-      </a>
-    </div>
-
-  </div>
-
-  <!-- Informação institucional -->
-  <div class="direitos">
-    <p>
-      © 2026 Lugares e Experiências. Todos os direitos reservados.
-    </p>
-  </div>
-
-</footer>
+              <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+                YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="direitos">
+        <p>© 2026 Lugares e Experiências. Todos os direitos reservados.</p>
+      </div>
+    </footer>
   </body>
 </html>

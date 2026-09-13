@@ -76,6 +76,7 @@ main {
   p {
     color: white;
     padding: 1rem;
+    text-align: center;
   }
 }
 
@@ -381,4 +382,175 @@ main {
 .newsletter button:hover {
   background-color: white;
   color: #3d24c7;
+}
+/* =========================
+   RODAPÉ - NOVO LAYOUT
+========================= */
+
+.rodape {
+  background-color: #3d24c7;
+  color: white;
+  padding: 4rem 8% 2rem;
+  margin-top: 2rem;
+}
+
+.rodape-conteudo {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* COLUNA DA NEWSLETTER */
+
+.rodape-newsletter {
+  flex: 2;
+}
+
+.rodape-newsletter h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.rodape-newsletter p {
+  max-width: 600px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* COLUNA DAS REDES */
+
+.redes-sociais {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.redes-sociais h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.redes-sociais a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.redes-sociais a i {
+  width: 30px;
+  font-size: 20px;
+}
+
+.redes-sociais a:hover {
+  color: #cfc8ff;
+}
+
+/* DIREITOS AUTORAIS */
+
+.direitos {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+  /* Conteúdo geral */
+  body {
+    width: 100%;
+  }
+  .divCards {
+  flex-direction: column;
+}
+
+.card {
+  width: 90%;
+}
+header {
+  flex-direction: column;
+  gap: 15px;
+}
+
+header h3 {
+  font-size: 24px;
+}
+
+header ul {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+/* BANNER */
+.cabecalho {
+  height: auto;
+  min-height: 70vh;
+  padding: 3rem 1.5rem;
+}
+
+.cabecalho h1 {
+  font-size: 40px;
+}
+
+.cabecalho p {
+  text-align: center;
+  font-size: 18px;
+}
+/* BARRA DE BUSCA */
+.box-busca {
+  width: 90%;
+  height: auto;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 1rem;
+  gap: 10px;
+}
+
+.box-busca input,
+.box-busca select,
+.box-busca button {
+  width: 100%;
+}
+.box-busca .icone {
+  display: none;
+}
+/* RODAPÉ RESPONSIVO */
+
+.rodape {
+  padding: 3rem 1.5rem 2rem;
+}
+
+.rodape-conteudo {
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.rodape-newsletter {
+  width: 100%;
+}
+
+.rodape-newsletter h2 {
+  font-size: 28px;
+}
+
+.redes-sociais {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.direitos {
+  margin-top: 2rem;
+}
 }
